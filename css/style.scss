@@ -1,0 +1,47 @@
+---
+sitemap: false
+---
+
+@charset "utf-8";
+
+$c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+
+// Complete list of Tachyons partials in _sass folder
+// Order is important
+// First 3 must be normalize, media-queries then border-colors
+// Then, import whichever you need
+
+@import
+    "normalize",
+    "media-queries",
+    "colors",
+    "border-colors",
+    "border-style",
+    "border-widths",
+    "borders",
+    "box-sizing",
+    "code",
+    "display",
+    "font-style",
+    "font-weight",
+    "hovers",
+    "images",
+    "line-height",
+    "links",
+    "lists",
+    "max-widths",
+    "nested",
+    "skins-pseudo",
+    "skins",
+    "spacing",
+    "styles",
+    "text-align",
+    "text-decoration",
+    "type-scale",
+    "typography",
+    "utilities",
+    "visibility",
+    "white-space",
+    "widths",
+    "c"
+;

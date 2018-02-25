@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+    <head>
+
+        {% if page.is_home %}
+
+        <title>{{ site.title }}</title>
+
+        <meta name="description" content="{{ site.description }}">
+
+        {% elsif page.is_article %}
+
+        <title>{{ page.webTitle }} ⚡️ {{ site.title }}</title>
+
+        {% else %}
+
+        <title>{{ page.title }}</title>
+
+        {% endif %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta charset="utf-8">
+
+        {% if page.is_article %}
+
+        <link rel="canonical" href="{{ page.webUrl }}">
+
+        {% endif %}
+
+        <style>
+            {% capture inline-styles %}
+            {% include style.scss %}
+            {% endcapture %}
+            {{ inline-styles | scssify }}
+        </style>
+
+    </head>
+
+    <body class="ma0 pa0 bg-washed-yellow dark-gray c-sans-serif c-lh-copy">
+
+        <div class="dt-l w-100-l">
+
+            <div class="pa2 pa5-l ph3-l dtc-l bg-dark-gray white w-30-l mb3 mb0-l">
+
+                <div class="measure center">
+
+                    <h1 class="ma0 f5"><a href="/" class="db pb1 pb3-l white no-underline hover-gold">{{ site.title }}</a></h1>
+
+                </div>
+
+            </div>
+
+            <div class="pa2 pa5-l pb2-l dtc-l w-70-l">
+
+                <main class="measure center">
