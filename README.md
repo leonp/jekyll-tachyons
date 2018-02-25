@@ -1,12 +1,12 @@
-# jbase
+# Jekyll Tachyons
 
-jbase is a base Jekyll theme that:
+Jekyll Tachyons is a base Jekyll theme that:
 
 - Imports Tachyons modules as SASS files
 - Inlines styles
 - Minimises HTML
 
-You can choose which Tachyons modules to include in your styles by adding them to or removing them from the `_includes\style.scss` file.  Or, simply keep the full list and comment out any you don't want to import by preceding them with `\\`.
+You can choose which Tachyons modules to include in your styles by adding them to or removing them from the `_includes\style.scss` file.  Or, simply keep the full list and comment out any you don't want.
 
 The Tachyons modules live in the `_sass` directory, along with 2 additional SASS files:
 
