@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en-gb">
+<html lang="{{ site.lang }}">
 
     <head>
 
         {% if page.is_home %}
 
         <title>{{ site.title }}</title>
-
         <meta name="description" content="{{ site.description }}">
-
-        {% elsif page.is_article %}
-
-        <title>{{ page.webTitle }} ⚡️ {{ site.title }}</title>
 
         {% else %}
 
-        <title>{{ page.title }}</title>
+        <title>{{ page.title }} &#8211; {{ site.title }}</title>
 
         {% endif %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta charset="utf-8">
-
-        {% if page.is_article %}
-
-        <link rel="canonical" href="{{ page.webUrl }}">
-
-        {% endif %}
 
         <style>
             {% capture inline-styles %}
@@ -39,20 +27,12 @@
 
     </head>
 
-    <body class="ma0 pa0 bg-washed-yellow dark-gray c-sans-serif c-lh-copy">
+    <body class="ma0 pa2 pa4-ns bg-white dark-gray sans-serif lh-copy">
 
-        <div class="dt-l w-100-l">
+        <p class="clip"><a href="#content">Skip to content</a></p>
 
-            <div class="pa2 pa5-l ph3-l dtc-l bg-dark-gray white w-30-l mb3 mb0-l">
+        <div class="measure center">
 
-                <div class="measure center">
+            <h1 class="ma0 f5 lh-title"><a href="/" class="dark-gray no-underline">{{ site.title }}</a></h1>
 
-                    <h1 class="ma0 f5"><a href="/" class="db pb1 pb3-l white no-underline hover-gold">{{ site.title }}</a></h1>
-
-                </div>
-
-            </div>
-
-            <div class="pa2 pa5-l pb2-l dtc-l w-70-l">
-
-                <main class="measure center">
+            <main id="content">
