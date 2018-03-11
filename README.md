@@ -2,9 +2,11 @@
 
 Jekyll Tachyons is a base Jekyll theme that:
 
-- Imports Tachyons modules as SASS files
-- Inlines styles
-- Minimises HTML
+- imports Tachyons modules as SASS files
+- inlines styles
+- creates basic `default` and `post` layout files
+- adds a `c-sans-serif` variable to `_variables.scss`
+- adds a `.c-sans-serif` rule to `_c.scss`
 
 You can choose which Tachyons modules to include in your styles by adding them to or removing them from the `_includes\style.scss` file. Or, simply keep the full list and comment out any you don't want.
 
@@ -30,18 +32,21 @@ You can define the ranges of `ns`, `m` and `l` in the `media-queries.scss` file 
 
 Because the SASS files refer to each other and `_c.scss` may refer to `_variables.scss`, the first files you import should be:
 
-1. "variables"
-2. "normalize"
-3. "media-queries"
-4. "colors"
+1. `_normalize.scss`
+2. `_media-queries.scss`
+3. `_variables.scss`
+4. `_colors.scss`
+5. `_spacing.scss`
 
 ## Import everything
 
-Avoid all choice and simply import:
+Avoid all choice and simply import (delete all the modules if you want, or comment them out):
 
-1. "tachyons-4.8.1"
-2. "variables"
-3. "c"
+1. `_tachyons-4.8.1.scss`
+2. `_variables.scss`
+3. `_c.scss`
+
+If you haven't created any variables and/or custom rules, you'll only need to import `_tachyons-4.8.1.scss`.
 
 ## Moi
 
