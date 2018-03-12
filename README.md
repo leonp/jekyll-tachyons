@@ -8,6 +8,16 @@ Jekyll Tachyons is a base Jekyll theme that:
 - adds a `c-sans-serif` variable to `_variables.scss`
 - adds a `.c-sans-serif` rule to `_c.scss`
 
+## Installation
+
+Clone or fork this repo, or download the files. Then:
+
+1. If you haven't done so already, install [Bundler](http://bundler.io/)
+2. Navigate to the theme folder
+3. Run `bundle update`
+4. Run `bundle install`
+5. Run `bundle exec jekyll s` to serve and build the site
+
 ## Selecting Tachyons modules
 
 Simply comment out any modules you don't want by preceding them with `//`.
