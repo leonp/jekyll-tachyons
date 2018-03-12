@@ -19,6 +19,13 @@ lang: "en" # or fr, de, es etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Include styles inline or link to css file?
+# This has to be set to css: inline for the theme to inline styles
+# Set it to anything else, or remove it, to link to /css/style.class
+
+css: inline
+
+
 # Build settings
 markdown: kramdown
 

@@ -3,17 +3,39 @@
 Jekyll Tachyons is a base Jekyll theme that:
 
 - imports Tachyons modules as SASS files
-- inlines styles
+- provides an option to inlines styles
 - creates basic `default` and `post` layout files
 - adds a `c-sans-serif` variable to `_variables.scss`
 - adds a `.c-sans-serif` rule to `_c.scss`
 
-You can choose which Tachyons modules to include in your styles by adding them to or removing them from the `_includes\style.scss` file. Or, simply keep the full list and comment out any you don't want.
+## Selecting Tachyons modules
+
+Simply comment out any modules you don't want by preceding them with `//`.
 
 The Tachyons modules live in the `_sass` directory, along with 2 additional SASS files:
 
 - `_c.scss`, which includes any additional user styles (I normally precede these with a '-c' to distinguish them from Tachyons selectors)
 - `_variables.scss`, which includes any variables you want to refer to in `_c.scss`
+
+Alternatively, import just the following files. You can comment out or even delete the rest.
+
+1. `_tachyons-4.8.1.scss`
+2. `_variables.scss`
+3. `_c.scss`
+
+If you haven't created any variables and/or custom rules, you'll only need to import `_tachyons-4.8.1.scss`.
+
+## Inlining styles in the head or linking to a separate CSS file
+
+You can get the theme to include styles within `<style></style>` tags in the document `head`. This saves a call to a separate CSS file, maybe speeding your site up a bit.
+
+To inline your styles make sure you include this line in `_config.yml`:
+
+`css: inline`
+
+If you don't include the line, or change it to something like `css: linked`, the theme will link to a separate CSS file (`/css/style.css`).
+
+Note that the theme is set to inline styles by default.
 
 ## Media queries
 
@@ -37,16 +59,6 @@ Because the SASS files refer to each other and `_c.scss` may refer to `_variable
 3. `_variables.scss`
 4. `_colors.scss`
 5. `_spacing.scss`
-
-## Import everything
-
-Avoid all choice and simply import (delete all the modules if you want, or comment them out):
-
-1. `_tachyons-4.8.1.scss`
-2. `_variables.scss`
-3. `_c.scss`
-
-If you haven't created any variables and/or custom rules, you'll only need to import `_tachyons-4.8.1.scss`.
 
 ## Moi
 
