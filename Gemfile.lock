@@ -49,8 +49,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.6.2)
+  jekyll
   jekyll-feed (~> 0.6)
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
