@@ -12,11 +12,11 @@ Jekyll Tachyons is a base Jekyll theme that:
 
 Clone or fork this repo, or download the files. Then:
 
-1. If you haven't done so already, install [Bundler](http://bundler.io/)
-2. Navigate to the theme folder
-3. Run `bundle update`
-4. Run `bundle install`
-5. Run `bundle exec jekyll s` to serve and build the site
+1. if you haven't done so already, install [Bundler](http://bundler.io/)
+2. navigate to the theme folder
+3. run `bundle update`
+4. run `bundle install`
+5. run `bundle exec jekyll s` to serve and build the site
 
 ## Selecting Tachyons modules
 
@@ -24,7 +24,7 @@ Simply comment out any modules you don't want by preceding them with `//`.
 
 The Tachyons modules live in the `_sass` directory, along with 2 additional SASS files:
 
-- `_c.scss`, which includes any additional user styles (I normally precede these with a '-c' to distinguish them from Tachyons selectors)
+- `_c.scss`, which includes any additional user styles (I normally precede these with a 'c-' to distinguish them from Tachyons selectors).
 - `_variables.scss`, which includes any variables you want to refer to in `_c.scss`
 
 Alternatively, import just the following files. You can comment out or even delete the rest.
@@ -58,7 +58,7 @@ It uses three breakpoints, which can be applied to almost all tachyons selectors
 - `db-m` (applies to medium screen widths only)
 - `db-l` (applies to large screen widths and up only)
 
-You can define the ranges of `ns`, `m` and `l` in the `media-queries.scss` file by overriding the defaults after they've been declared.
+You can define the ranges of `ns`, `m` and `l` in the `_media-queries.scss` file by overriding the defaults after they've been declared.
 
 ## Import Order
 
@@ -72,7 +72,6 @@ Because the SASS files refer to each other and `_c.scss` may refer to `_variable
 
 ## Moi
 
-<ul>
-  <li><a href="https://www.leonpaternoster.com">Leon Paternoster</a></li>
-  <li><a href="https://www.twitter.com/leonpaternoster">@leonpaternoster</a></li>
-</ul>
+- [leonpaternoster.com](https://www.leonpaternoster.com)
+- [Micro.blog](https://micro.blog/leonp)
+- [Twitter](https://www.mobile.twitter.com/leonpaternoster)

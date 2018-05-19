@@ -1,137 +1,29 @@
 @media screen, projection {
 
-html {
-    font-size: 106.25%;
-}
+// Define variables in _variables.scss
+// Then create classes that refer to them here
+// Then use these class names in your HTML
 
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-figcaption,
-figcaption p {
-    font-size: 0.875em;
-    margin-bottom: 1rem;
-    font-family: $c-sans-serif;
-}
-
-blockquote {
-    font-size: 0.875em;
-    padding-left: 0.5rem;
-    border-left: 0.25rem solid #AAA;
-}
-
-th {
-    text-align: left;
-}
-
-td, th {
-    padding: 0.25rem 0.5rem;
-}
-
-.c-measure {
-    max-width: 29em;
-}
-
-.c-lh-copy {
-    line-height: 1.45;
-}
-
-.c-lh-title {
-    line-height: 1.25;
-}
-
+// Example: create an alternative sans-serif class
+// Define $c-sans-serif in _variables.scss
+// Then create a c-sans-serif class here
+// Like so:
 .c-sans-serif {
     font-family: $c-sans-serif;
 }
 
-.c-hyphens {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+
+// Some empty media queries
+// Use these if you want to make responsive custom classes
+
+@media #{$breakpoint-not-small} {
 }
 
-.c-border-links a {
-    text-decoration: none;
-    border-bottom: 1px solid;
+@media #{$breakpoint-medium} {
 }
 
-.c-links a:link {
-    color: #00449E;
+@media #{$breakpoint-large} {
 }
 
-.c-links a:visited {
-    color: #357EDD;
-}
 
-.c-headers h1,
-.c-headers h2,
-.c-headers h3 {
-    margin: 0;
-    padding: 0.5rem 0;
-    font-size: 1.25rem;
-    line-height: 1.25;
-    font-family: $c-sans-serif;
-    font-weight: 500;
-}
-
-.c-headers h2 + * {
-    margin-top: 0;
-}
-
-.gu-image {
-    width: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-}
-
-.element-video {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-}
-
-.element-video iframe,
-.element-video object,
-.element-video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.element-rich-link {
-    font-family: $c-sans-serif;
-    font-weight: bold;
-}
-
-.element-pullquote {
-    display: none;
-}
-
-/* Media queries */
-
-@media (min-width: 40em) {
-  html {
-    font-size: 112.5%;
-  }
-  .c-lh-copy {
-      line-height: 1.5;
-  }
-  .c-lh-title {
-      line-height: 1.3;
-  }
-}
-
-@media (min-width: 60em) {
-  html {
-    font-size: 118.75%;
-  }
-}
-
-}
+} // End the enclosing screen/projection media query
