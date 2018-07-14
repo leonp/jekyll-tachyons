@@ -3,7 +3,7 @@
 Jekyll Tachyons is a base Jekyll theme that:
 
 - imports Tachyons modules as SASS files
-- provides an option to inlines styles
+- provides an option to inline styles
 - creates basic `default` and `post` layout files
 - adds a `c-sans-serif` variable to `_variables.scss`
 - adds a `.c-sans-serif` rule to `_c.scss`
@@ -18,23 +18,6 @@ Clone or fork this repo, or download the files. Then:
 4. run `bundle install`
 5. run `bundle exec jekyll s` to serve and build the site
 
-## Selecting Tachyons modules
-
-Simply comment out any modules you don't want by preceding them with `//`.
-
-The Tachyons modules live in the `_sass` directory, along with 2 additional SASS files:
-
-- `_c.scss`, which includes any additional user styles (I normally precede these with a 'c-' to distinguish them from Tachyons selectors).
-- `_variables.scss`, which includes any variables you want to refer to in `_c.scss`
-
-Alternatively, import just the following files. You can comment out or even delete the rest.
-
-1. `_tachyons-4.8.1.scss`
-2. `_variables.scss`
-3. `_c.scss`
-
-If you haven't created any variables and/or custom rules, you'll only need to import `_tachyons-4.8.1.scss`.
-
 ## Inlining styles in the head or linking to a separate CSS file
 
 You can get the theme to include styles within `<style></style>` tags in the document `head`. This saves a call to a separate CSS file, maybe speeding your site up a bit.
@@ -46,6 +29,28 @@ To inline your styles make sure you include this line in `_config.yml`:
 If you don't include the line, or change it to something like `css: linked`, the theme will link to a separate CSS file (`/css/style.css`).
 
 Note that the theme is set to inline styles by default.
+
+## Selecting Tachyons modules
+
+Simply comment out any modules you don't want by preceding them with `//`.
+
+The module files live in 2 places. The folder you need to head to in order to comment out files depends on whether you've chosen to inline your styles or not:
+
+- If you're inlining styles, edit the list in `/_includes/style.scss`
+- If you're referring to an external stylesheet, edit the list in `/css/style.scss`
+
+There are 2 additional SASS files:
+
+- `_c.scss`, which includes any additional user styles (I normally precede these with a 'c-' to distinguish them from Tachyons selectors).
+- `_variables.scss`, which includes any variables you want to refer to in `_c.scss`
+
+Alternatively, import just the following files. You can comment out or even delete the rest.
+
+1. `_tachyons-4.8.1.scss`
+2. `_variables.scss`
+3. `_c.scss`
+
+(Note: If you haven't created any variables and/or custom rules, you'll only need to import `_tachyons-4.8.1.scss`.)
 
 ## Media queries
 
