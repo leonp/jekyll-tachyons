@@ -2,11 +2,13 @@
 
 Jekyll Tachyons is a base Jekyll theme that:
 
-- imports Tachyons modules as SASS files
+- imports Tachyons individual modules (borders, spacing, flexbox etc. etc. etc.) as individual SASS files
 - provides an option to inline styles
 - creates basic `default` and `post` layout files
 - adds a `c-sans-serif` variable to `_variables.scss`
 - adds a `.c-sans-serif` rule to `_c.scss`
+
+Useful if you're using Tachyons and want to get a Jekyll site up and running quickly, while controlling what [Tachyons modules](http://tachyons.io/docs/table-of-styles/) you load. Tachyons is a small CSS framework, but you still want to avoid loading CSS you don't need.
 
 ## Installation
 
@@ -32,9 +34,13 @@ Note that the theme is set to inline styles by default.
 
 ## Selecting Tachyons modules
 
-Simply comment out any modules you don't want by preceding them with `//`.
+The theme loads each Tachyons module individually as a SASS file using Jekyll's build pipeline.
 
-The module files live in 2 places. The folder you need to head to in order to comment out files depends on whether you've chosen to inline your styles or not:
+Simply comment out any modules you don't want by preceding its SASS file name with `//`. For example, if you don't need negative margins:
+
+`// "negative-margins"`
+
+The file you need to edit depends on whether you've chosen to inline your styles:
 
 - If you're inlining styles, edit the list in `/_includes/style.scss`
 - If you're referring to an external stylesheet, edit the list in `/css/style.scss`
