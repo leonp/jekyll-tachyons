@@ -69,9 +69,11 @@ It uses three breakpoints, which can be applied to almost all tachyons selectors
 - `db-m` (applies to medium screen widths only)
 - `db-l` (applies to large screen widths and up only)
 
-You can define the ranges of `ns`, `m` and `l` in the `_media-queries.scss` file by overriding the defaults after they've been declared.
+You can define the ranges of `ns`, `m` and `l` by overriding the defaults after they've been declared.
 
-To do this, edit the `_media-queries.scss` file. By default, it contains these lines, which define your responsive breakpoints:
+To do this, edit the `_media-queries.scss` file in the `_sass` folder.
+
+By default, it contains these lines, which define your responsive breakpoints:
 
 `$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
 $breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
