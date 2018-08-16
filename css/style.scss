@@ -2,11 +2,11 @@
 sitemap: false
 ---
 
-// Complete list of Tachyons partials in _sass folder
-// Order is important
-// First 5 should be normalize, media-queries, variables, colors, spacing
-// Because the other files refer to variables declared in these files
-// Comment out the modules you don't need (ex. the first 5)
+ Complete list of Tachyons partials in _sass folder
+ Order is important
+ First 5 should be normalize, media-queries, variables, colors, spacing
+ Because the other files refer to variables declared in these files
+ Comment out the modules you don't need (ex. the first 5)
 
 @import
     "normalize",
@@ -17,11 +17,11 @@ sitemap: false
     "aspect-ratios",
     "background-position",
     "background-size",
+    "borders",
     "border-colors",
     "border-radius",
     "border-style",
     "border-widths",
-    "borders",
     "box-shadow",
     "box-sizing",
     "clears",
@@ -60,8 +60,8 @@ sitemap: false
     "skins",
     "styles",
     "tables",
-    // If you just want all the Tachyons modules delete the single modules
-    // and uncomment this
+    //  If you just want all the Tachyons modules delete the single modules
+    //  and uncomment this
     // "tachyons-4.8.1",
     "text-align",
     "text-decoration",
