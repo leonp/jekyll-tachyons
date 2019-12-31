@@ -2,12 +2,6 @@
 sitemap: false
 ---
 
- Complete list of Tachyons partials in _sass folder
- Order is important
- First 5 should be normalize, media-queries, variables, colors, spacing
- Because the other files refer to variables declared in these files
- Comment out the modules you don't need (ex. the first 5)
-
 @import
     "normalize",
     "media-queries",
