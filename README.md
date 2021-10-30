@@ -8,7 +8,7 @@ Jekyll Tachyons is a base Jekyll theme that:
 - adds a `c-sans-serif` variable to `_variables.scss`
 - adds a `.c-sans-serif` rule to `_c.scss`
 
-Useful if you're using Tachyons and want to get a Jekyll site up and running quickly, while controlling what [Tachyons modules](http://tachyons.io/docs/table-of-styles/) you load. Tachyons is a small CSS framework, but you still want to avoid loading CSS you don't need.
+Useful if want to get a Jekyll site up and running quickly, while controlling what [Tachyons modules](http://tachyons.io/docs/table-of-styles/) you load. Tachyons is a small CSS framework, but you still want to avoid loading CSS you don't need.
 
 ## Installation
 
